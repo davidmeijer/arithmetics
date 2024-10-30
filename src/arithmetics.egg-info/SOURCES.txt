@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/arithmetics/__init__.py
+src/arithmetics/operations.py
+src/arithmetics/version.py
+src/arithmetics.egg-info/PKG-INFO
+src/arithmetics.egg-info/SOURCES.txt
+src/arithmetics.egg-info/dependency_links.txt
+src/arithmetics.egg-info/not-zip-safe
+src/arithmetics.egg-info/requires.txt
+src/arithmetics.egg-info/top_level.txt
+tests/test_operations.py
+tests/test_version.py

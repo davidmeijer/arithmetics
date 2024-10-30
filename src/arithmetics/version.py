@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+
+"""Version information for arithmetics package."""
+
+VERSION = "1.0.0-dev"
+
+
+def get_version() -> str:
+    """Return the version.
+
+    :return: The version of the package, using semantic versioning.
+    :rtype: str
+    """
+    return VERSION

@@ -1,0 +1,2 @@
+.. automodule:: arithmetics.operations
+    :members:

@@ -1,0 +1,13 @@
+tqdm
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-click
+sphinx_automodapi
+autodoc_pydantic
+texext
+
+[tests]
+tox
+pytest

@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: arithmetics
+Version: 1.0.0.dev0
+Summary: A package for basic arithmetic operations
+Home-page: https://github.com/davidmeijer/arithmetics
+Download-URL: https://github.com/davidmeijer/arithmetics/releases
+Author: David Meijer
+Author-email: david.meijer@wur.nl
+Maintainer: David Meijer
+Maintainer-email: david.meijer@wur.nl
+License: MIT
+Project-URL: Tracker, https://github.com/davidmeijer/arithmetics/issues
+Project-URL: Source, https://github.com/davidmeijer/arithmetics
+Project-URL: Documentation, https://arithmetics.readthedocs.io
+Keywords: snekpack,cookiecutter,arithmetics
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Pytest
+Classifier: Framework :: tox
+Classifier: Framework :: Sphinx
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Provides-Extra: tests
+Requires-Dist: tox; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx-click; extra == "docs"
+Requires-Dist: sphinx_automodapi; extra == "docs"
+Requires-Dist: autodoc_pydantic; extra == "docs"
+Requires-Dist: texext; extra == "docs"
+
+# Arithmetics
+
+Welcome to the Arithmetics package! This package is designed to help you with basic arithmetic operations.
+
+This package was created with the [cookiecutter-snekpack](https://github.com/cthoyt/cookiecutter-snekpack).
+
+## Getting started
+
+You can use the package to perform basic arithmetic operations. Here is an example:
+
+```python
+from arithmetics import add
+
+result = add(1, 2)
+print(result)
+```
+
+## Installation
+
+To install the package, you can use the following command:
+
+```bash
+pip install .
+```
+
+## Contribution
+
+If you would like to contribute to the package, you can open an issue or a pull request on the [GitHub repository](https://github.com/davidmeijer/arithmetics).
+
+When contributing, we advise to install the package in editable mode, including the test dependencies:
+
+```bash
+pip install -e .\[tests\]
+```
+
+You can run the linter and tests using `tox`:
+    
+```bash
+tox
+```
+
+## Attribution
+
+The code in this package is licensed under the MIT license.
