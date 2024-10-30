@@ -4,6 +4,7 @@ pyproject.toml
 setup.cfg
 src/arithmetics/__init__.py
 src/arithmetics/operations.py
+src/arithmetics/py.typed
 src/arithmetics/version.py
 src/arithmetics.egg-info/PKG-INFO
 src/arithmetics.egg-info/SOURCES.txt

@@ -1,7 +1,6 @@
 Metadata-Version: 2.1
 Name: arithmetics
-Version: 1.0.0.dev0
-Summary: A package for basic arithmetic operations
+Version: 2.0.2.dev0
 Home-page: https://github.com/davidmeijer/arithmetics
 Download-URL: https://github.com/davidmeijer/arithmetics/releases
 Author: David Meijer
