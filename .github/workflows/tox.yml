@@ -1,0 +1,42 @@
+name: tox
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "docs/**"
+      - "tox.ini"
+      - "setup.cfg"
+      - "pyproject.toml"
+      - ".github/workflows/tox.yml"
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "docs/**"
+      - "tox.ini"
+      - "setup.cfg"
+      - "pyproject.toml"
+      - ".github/workflows/tox.yml"
+
+jobs:
+  tox:
+    name: run tox
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+        python: [ 3.9 ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: install dependencies
+        run: pip install tox
+      - name: Run tox
+        run: tox
