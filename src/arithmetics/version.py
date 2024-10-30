@@ -2,7 +2,7 @@
 
 """Version information for arithmetics package."""
 
-VERSION = "2.0.0-dev"
+VERSION = "2.0.0"
 
 
 def get_version() -> str:
